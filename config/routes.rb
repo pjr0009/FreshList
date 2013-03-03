@@ -1,5 +1,11 @@
-Askyourself::Application.routes.draw do
+Boilerplate::Application.routes.draw do
+
   devise_for :users
 
-  root :to => "dashboard#index"
+  match 'dashboard' => 'dashboard#index', :as => 'dashboard'
+
+  root :to => "static#index"
+
+  match ':action' => 'static#:action'
+
 end

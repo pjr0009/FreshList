@@ -9,7 +9,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Askyourself
+module Boilerplate
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -62,6 +62,14 @@ module Askyourself
     
     config.generators do |g|
       g.test_framework :rspec
+    end
+    
+    config.to_prepare do
+      Devise::SessionsController.layout "static"
+      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "static" }
+      Devise::ConfirmationsController.layout "static"
+      Devise::UnlocksController.layout "static"            
+      Devise::PasswordsController.layout "static"        
     end
     
   end

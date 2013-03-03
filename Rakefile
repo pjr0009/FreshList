@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Askyourself::Application.load_tasks
+Boilerplate::Application.load_tasks
