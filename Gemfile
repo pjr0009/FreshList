@@ -7,7 +7,6 @@ gem 'sqlite3'
 gem 'devise'
 
 gem 'jquery-rails'
-gem 'debugger'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
