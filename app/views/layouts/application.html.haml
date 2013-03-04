@@ -12,7 +12,7 @@
     %header
       .navbar
         .navbar-inner
-          = link_to "Self Stats", root_url, :title => "Dashboard", :class => "brand"
+          = link_to "Boilerplate", root_url, :title => "Dashboard", :class => "brand"
           %ul.nav.pull-right
             %li.dropdown
               = link_to "#", :title => "Account", :class => "dropdown-toggle", :'data-toggle' => "dropdown" do
@@ -21,7 +21,7 @@
               %ul.dropdown-menu
                 %li= link_to "Sign Out", destroy_user_session_path, :title => "Sign Out", :method => 'delete'
     
-      = render :partial => 'layouts/notices'
+      = render :partial => 'layouts/flashes'
     
     = render :partial => 'layouts/breadcrumb'
 
