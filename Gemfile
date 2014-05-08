@@ -9,11 +9,9 @@ gem 'jquery-rails'
 gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
-  gem 'bootstrap-sass-rails', '~> 2.3.2.0'
+  gem 'bootstrap-sass-rails', '~> 3.1.0.0'
   gem 'font-awesome-rails'
-  
   gem 'coffee-rails', '~> 4.0.0'
-
   gem 'uglifier', '>= 1.0.3'
 end
 
