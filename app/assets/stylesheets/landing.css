@@ -1,6 +1,5 @@
 //= require_self
-//= require twitter/bootstrap-no-sprites
-//= require twitter/bootstrap/_responsive
+//= require /bootstrap-no-sprites
 //= require bootstrap-overrides
 //= require font-awesome
 //= require boilerplate-landing
