@@ -1,12 +1,12 @@
 class StaticController < ApplicationController
-  before_filter :current_u
+  before_filter :logged_in?
   layout 'static'
-  
+
   def index
     render :layout => 'landing'
   end
 
-  def current_u
+  def logged_in?
   	if current_user
   		redirect_to dashboard_path
   	end
