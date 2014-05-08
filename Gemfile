@@ -6,7 +6,7 @@ gem 'haml-rails'
 gem 'sqlite3'
 gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
 gem 'jquery-rails'
-
+gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 4.0.0'
   gem 'bootstrap-sass-rails', '~> 2.3.2.0'
