@@ -39,9 +39,12 @@ GEM
     arel (4.0.0)
     atomic (1.1.10)
     bcrypt-ruby (3.0.1)
-    bootstrap-sass-rails (2.3.2.0)
-      railties (>= 3.1.0)
-      sass-rails (>= 3.1.0)
+    bootstrap-sass (3.1.0.2)
+      sass (~> 3.2)
+    bootstrap-sass-rails (3.1.0.0)
+      bootstrap-sass (~> 3.1.0.0)
+      railties (>= 3.2.0)
+      sass-rails (>= 3.2.0)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -140,7 +143,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bootstrap-sass-rails (~> 2.3.2.0)
+  bootstrap-sass-rails (~> 3.1.0.0)
   coffee-rails (~> 4.0.0)
   devise!
   font-awesome-rails
