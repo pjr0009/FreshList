@@ -5,5 +5,5 @@ class Account < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs to :owner, :polymorphic => true
+  belongs_to :owner, :polymorphic => true
 end
