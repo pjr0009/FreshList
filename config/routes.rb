@@ -1,4 +1,4 @@
-Boilerplate::Application.routes.draw do
+FreshList::Application.routes.draw do
 
 
   devise_for :accounts
