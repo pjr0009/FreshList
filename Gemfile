@@ -10,7 +10,7 @@ gem 'pg'
 gem 'rename'
 group :assets do
   gem 'sass-rails'
-  gem 'bootstrap-sass-rails'
+  gem 'bootstrap-sass'
   gem 'font-awesome-rails'
   gem 'coffee-rails'
   gem 'uglifier'
