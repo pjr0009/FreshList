@@ -1,3 +1,3 @@
-class Buyer < ActiveRecord::Base
-  has_one :account, :as => :owner
+class Buyer < Profile
+  has_one :cart
 end
