@@ -62,7 +62,7 @@ module FreshList
     
     config.to_prepare do
       Devise::SessionsController.layout "static"
-      Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application" : "static" }
+      Devise::RegistrationsController.layout proc{ |controller| account_signed_in? ? "application" : "static" }
       Devise::ConfirmationsController.layout "static"
       Devise::UnlocksController.layout "static"            
       Devise::PasswordsController.layout "static"        
