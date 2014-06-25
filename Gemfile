@@ -7,7 +7,6 @@ gem 'sqlite3'
 gem 'devise'
 gem 'jquery-rails'
 gem 'pg'
-gem 'rename'
 group :assets do
   gem 'sass-rails'
   gem 'bootstrap-sass-rails'

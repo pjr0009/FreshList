@@ -7,7 +7,7 @@ class StaticController < ApplicationController
   end
 
   def logged_in?
-  	if current_user
+  	if current_account
   		redirect_to dashboard_path
   	end
   end
